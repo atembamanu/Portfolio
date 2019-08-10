@@ -1,11 +1,15 @@
 body{
     background-color: #202462;
+    overflow: hidden;
 }
 li{
    
 
      list-style: none;
      padding: 13px;
+}
+.active{
+    color: white;
 }
 
 li a{
@@ -15,16 +19,28 @@ li a{
 
  
 }
+header{
+    float: left;
+}
+.name{
+    color: #51c8fc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 .circular--square {
-    height:400px;
-    height: 400px;
+    /* height:400px;
+    height: 400px; */
      border-radius: 50%;
      opacity: 0.5;
   }
 
   .img-container-block {
+      margin-top: 60px;
     text-align: center;
    
+  }
+  .mydescr{
+      float: right;
+      clear: both;
   }
   a:link {
     text-decoration: none;
@@ -32,6 +48,9 @@ li a{
 nav ul li a:hover{
     color: white;
 
+}
+pre{
+    display: block;
 }
 
 blockquote{
@@ -70,6 +89,71 @@ blockquote{
     font-weight: bold;
     margin-top:1em;
   }
-  .aboutUser{
-      color: white;
+
+  .knowNot{
+    text-align: center;
+   
+
+
   }
+  .knowAboutDesc{
+      text-align: center;
+  }
+  .knowAbout{
+      clear: both;
+      align-content: center;
+      text-align: center;
+      display: flex;
+      margin: 0px auto;
+
+  }
+  .education, .experience, .skills, .interests_hobbies, .whyCode{
+    display : flex;
+    align-content: center;
+      padding: 20px;
+    flex-direction: row;
+  }
+h2{
+    color:#51c8fc;
+    font-size: 29px;
+ 
+}
+.aboutUser{
+    color: white;
+}
+  .knowNot p{
+    font-size: 27px;
+    color: white;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+    
