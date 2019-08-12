@@ -29,4 +29,4 @@ Student Moringa School
 
 * LICENSED UNDER 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/license/MIT)
