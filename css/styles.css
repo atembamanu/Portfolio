@@ -52,42 +52,6 @@ pre{
     display: block;
 }
 
-blockquote{
-    opacity: 0.5;
-    font-size: 1.4em;
-    width:40%;
-    margin:50px auto;
-    font-family:Open Sans;
-    font-style:italic;
-    color: #555555;
-    padding:1.2em 30px 1.2em 75px;
-    border-left:8px solid #78C0A8 ;
-    line-height:1.6;
-    position: relative;
-    background:#EDEDED;
-  }
-  
-  blockquote::before{
-    font-family:Arial;
-    content: "\201C";
-    color:#78C0A8;
-    font-size:4em;
-    position: absolute;
-    left: 10px;
-    top:-10px;
-  }
-  
-  blockquote::after{
-    content: '';
-  }
-  
-  blockquote span{
-    display:block;
-    color:#333333;
-    font-style: normal;
-    font-weight: bold;
-    margin-top:1em;
-  }
 
   .knowNot{
     text-align: center;
@@ -186,16 +150,18 @@ h2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 26px;
   color : #51c8fc;
+  clear: both;
 
 
 }
 .Things{
-  margin: 40px;
+  margin: 90px;
 }
 
 main {
   min-width: 300px;
   max-width: 500px;
+  padding: 50px;
 
 }
 
@@ -260,9 +226,19 @@ main p span:last-child{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main p span:first-child{
+main p span:first-child, #job-title>span{
   font-size: 22px;
   color: green;
 font-style: oblique;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.education1{
+  float: left;
+}
+.lists{
+  color: white;
+
+}
+.lists li{
+  list-style: disc;
 }
