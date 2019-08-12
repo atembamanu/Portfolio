@@ -99,18 +99,16 @@ blockquote{
       text-align: center;
   }
   .knowAbout{
-      clear: both;
-      align-content: center;
       text-align: center;
       display: flex;
-      margin: 0px auto;
-
+      margin: 0 auto;
   }
+
   .education, .experience, .skills, .interests_hobbies, .whyCode{
-    display : flex;
-    align-content: center;
+    display : inline-flex;
       padding: 20px;
     flex-direction: row;
+    margin: 0 auto;
   }
 h2{
     color:#51c8fc;
@@ -159,4 +157,112 @@ h2{
 .portfolioPar{
     float: right;
 
+}
+/* .clicker1:focus + .myeducation{
+    display:block;
+    clear: both;
+    } */
+.myeducation{
+    display:none;
+    }      
+
+.clicker:focus + .myeducation{
+    display:block;
+    flex-direction: column;
+    }
+
+.knowAboutImages{
+  opacity: 0.5;
+}
+.knowAboutImages1{
+  opacity: 0.5;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  
+}
+#aboutHeadings{ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  color : #51c8fc;
+
+
+}
+.Things{
+  margin: 40px;
+}
+
+main {
+  min-width: 300px;
+  max-width: 500px;
+
+}
+
+main p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color:  fff;
+  
+}
+  main p:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color:  #34435E;
+    text-align: center;
+    line-height: 1.25em;
+    color: #ffffff;
+    font-size: 1em;
+  }
+main p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+main p:nth-child(odd):before {
+    left: 100%; 
+    margin-left: -20px;
+
+}
+
+main p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+main p:nth-child(even):before {
+    right: 100%; 
+    margin-right: -20px;
+  }
+
+main p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+main p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+main p span:last-child{
+  font-size: 22px;
+  color:#51c8fc;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main p span:first-child{
+  font-size: 22px;
+  color: green;
+font-style: oblique;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
